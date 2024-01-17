@@ -1,6 +1,6 @@
 # C - Sorting algorithms & Big O
 
-In this project, We (Kelvin Njuiri and Daisy Aram) implemented several different sorting algorithms.
+In this project, We ([Kelvin Njuiri](https://github.com/kelvin-go-get) and [Daisy Aram](https://github.com/DaisyAram)) implemented several different sorting algorithms.
 
 ## Tests :heavy_check_mark:
 
