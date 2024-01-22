@@ -21,24 +21,30 @@ void swap_ints(int *a, int *b)
  * @size: The size of the array.
  *
  * Description: Prints the array after each swap.
+ *
+ * Return: nothing
  */
 void selection_sort(int *array, size_t size)
 {
-	int *min;
+	int min_idx;
 	size_t i, j;
 
-	if (array == NULL || size < 2)
+	if (array == NULL || size < 2)/*array is null or less than 1*/
 		return;
 
-	for (i = 0; i < size - 1; i++)
+	for (i = 0; i < size - 1; i++)/*iterate over the array*/
 	{
-		min = array + i;
+		min_idx = i;
 		for (j = i + 1; j < size; j++)
-			min = (array[j] < *min) ? (array + j) : min;
-
-		if ((array + i) != min)
 		{
-			swap_ints(array + i, min);
+			if (array[j] < array[min_idx])
+			{
+				min_idx = j;
+			}
+		}
+		if (min_idx != 1)
+		{
+			swap_ints(array + i, array +  min_idx);
 			print_array(array, size);
 		}
 	}
