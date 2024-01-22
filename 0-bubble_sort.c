@@ -28,9 +28,9 @@ void swap_ints(int *a, int *b)
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
-	
+
 	if (array == NULL || size < 2)/*array is less than 2 or empty*/
-        return;
+	return;
 
 	for (i = 0; i < size - 1; i++)/*iterate twice for buble sort*/
 	{
